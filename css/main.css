@@ -22,7 +22,7 @@ body {
   margin: 0;
 }
 
-.main {
+figure {
   margin: 0;
 }
 
@@ -31,7 +31,7 @@ img {
   display: block;
 }
 
-.caption {
+figcaption {
   background-color: #e2e2e2;
   padding: 1rem;
 }
@@ -40,4 +40,56 @@ h2 {
   font-family: "Denk One", sans-serif;
   font-size: 1.5rem;
   margin-top: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+  font-size: 110%;
+  line-height: 1.4;
+  }
+
+  figure {
+    position: relative;
+    overflow: hidden;
+  }
+
+  figcaption {
+    position: absolute;
+    width: 58%;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
+
+    border-radius: .8rem;
+
+    padding-bottom: .2rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  figcaption {
+    width: 41%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  figcaption {
+    width: 30%;
+  }
+
 }
